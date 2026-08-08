@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="id" class="no-scroll">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Undangan Pernikahan — Rendi &amp; Boru</title>
+<meta name="description" content="Undangan Pernikahan Rendi & Boru — 7-8 September 2026, Watuagung, Tuntang, Semarang" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          maroon: {
+            950: '#1c0507',
+            900: '#33090d',
+            850: '#420b10',
+            800: '#5c121a',
+            700: '#7a1a24',
+            600: '#93222c',
+          },
+          gold: {
+            200: '#f4e6bd',
+            300: '#eeda9d',
+            400: '#ddbd6f',
+            500: '#c9a24b',
+            600: '#a9822f',
+            700: '#846222',
+          },
+          cream: {
+            100: '#faf4e6',
+            200: '#f3e9d2',
+            300: '#e9dab7',
+          },
+          ink: {
+            900: '#221b16',
+          },
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          body: ['"Cormorant Garamond"', 'serif'],
+          script: ['"Mrs Saint Delafield"', 'cursive'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<noscript><style>[data-aos]{ opacity:1 !important; transform:none !important; }</style></noscript>
+
+<style>
+  :root{
+    --gold: #c9a24b;
+    --gold-light: #eeda9d;
+    --maroon-deep: #1c0507;
+    --maroon: #33090d;
+  }
+  html { scroll-behavior: smooth; }
+  html, body{ max-width: 100%; overflow-x: hidden; }
+  body{
+    background-color: #faf4e6;
+    font-family: 'Cormorant Garamond', serif;
+    color: #221b16;
+  }
+  html.no-scroll, body.no-scroll{ overflow-y: hidden; height: 100%; }
+
+  .font-display{ font-family: 'Playfair Display', serif; }
+  .font-script{ font-family: 'Mrs Saint Delafield', cursive; }
+
+  /* ---------- Batik / Kawung texture ---------- */
+  .batik-bg{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23c9a24b' stroke-width='0.9' opacity='0.35'%3E%3Ccircle cx='21' cy='21' r='14'/%3E%3Ccircle cx='63' cy='21' r='14'/%3E%3Ccircle cx='21' cy='63' r='14'/%3E%3Ccircle cx='63' cy='63' r='14'/%3E%3Ccircle cx='42' cy='42' r='14'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 84px 84px;
+  }
+  .batik-bg-light{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23a9822f' stroke-width='0.8' opacity='0.14'%3E%3Ccircle cx='21' cy='21' r='14'/%3E%3Ccircle cx='63' cy='21' r='14'/%3E%3Ccircle cx='21' cy='63' r='14'/%3E%3Ccircle cx='63' cy='63' r='14'/%3E%3Ccircle cx='42' cy='42' r='14'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 84px 84px;
+  }
+
+  /* ---------- Section divider (parang wave) ---------- */
+  .parang-divider{
+    height: 34px;
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='34' viewBox='0 0 68 34'%3E%3Cpath d='M0 34 L17 0 L34 34 L51 0 L68 34' fill='none' stroke='%23c9a24b' stroke-width='1.4' opacity='0.55'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 68px 34px;
+  }
+
+  /* ---------- Ornate double-line divider with diamond ---------- */
+  .ornate-divider{ display:flex; align-items:center; justify-content:center; gap:.75rem; }
+  .ornate-divider .line{ height:1px; width:56px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+  .ornate-divider .diamond{ width:8px; height:8px; background:var(--gold); transform:rotate(45deg); }
+
+  /* ---------- Ornate photo frame ---------- */
+  .ornate-frame{ position:relative; padding:14px; }
+  .ornate-frame::before{
+    content:'';
+    position:absolute; inset:0;
+    border: 1px solid var(--gold);
+    pointer-events:none;
+  }
+  .ornate-frame::after{
+    content:'';
+    position:absolute; inset:6px;
+    border: 1px solid rgba(201,162,75,.55);
+    pointer-events:none;
+  }
+  .ornate-frame .corner{
+    position:absolute; width:26px; height:26px; z-index:2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Cpath d='M1 25 C1 12 3 3 16 1 M1 1 L1 8 M1 1 L8 1' fill='none' stroke='%23c9a24b' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+  }
+  .ornate-frame .corner.tl{ top:-2px; left:-2px; }
+  .ornate-frame .corner.tr{ top:-2px; right:-2px; transform: scaleX(-1); }
+  .ornate-frame .corner.bl{ bottom:-2px; left:-2px; transform: scaleY(-1); }
+  .ornate-frame .corner.br{ bottom:-2px; right:-2px; transform: scale(-1,-1); }
+
+  /* ---------- Cover / Curtain ---------- */
+  #cover{
+    position: fixed; inset:0; z-index:60;
+    background: radial-gradient(ellipse at 50% 0%, #4a0e14 0%, #1c0507 72%);
+    overflow:hidden;
+  }
+  .curtain-panel{
+    position:absolute; top:0; bottom:0; width:52%;
+    background:
+      repeating-linear-gradient(90deg,
+        rgba(0,0,0,.28) 0px, rgba(0,0,0,.28) 10px,
+        rgba(255,255,255,.045) 10px, rgba(255,255,255,.045) 20px,
+        rgba(0,0,0,.12) 20px, rgba(0,0,0,.12) 32px),
+      linear-gradient(180deg, #7a1a24 0%, #4a0e14 45%, #260609 100%);
+    box-shadow: inset -30px 0 60px rgba(0,0,0,.55);
+    transition: transform 1.4s cubic-bezier(.77,0,.18,1);
+    z-index:2;
+  }
+  .curtain-left{ left:0; transform-origin:left; animation: sway 6s ease-in-out infinite; }
+  .curtain-right{ right:0; transform-origin:right; box-shadow: inset 30px 0 60px rgba(0,0,0,.55); animation: sway 6s ease-in-out infinite reverse; }
+  @keyframes sway{
+    0%,100%{ transform: translateX(0) rotate(0deg); }
+    50%{ transform: translateX(2px) rotate(0.15deg); }
+  }
+  .curtain-fringe{
+    position:absolute; bottom:0; left:0; right:0; height:22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='22' viewBox='0 0 28 22'%3E%3Cpath d='M0 0 L28 0 L14 22 Z' fill='%23c9a24b' opacity='0.9'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 28px 22px;
+    z-index:3;
+  }
+  #cover.is-open .curtain-left{ transform: translateX(-105%); animation:none; }
+  #cover.is-open .curtain-right{ transform: translateX(105%); animation:none; }
+  #cover.is-hidden{ display:none; }
+
+  .cover-content{ opacity:1; transition: opacity .5s ease; }
+  #cover.is-open .cover-content{ opacity:0; }
+
+  .chandelier-glow{
+    filter: drop-shadow(0 0 14px rgba(238,218,157,.45));
+  }
+
+  /* ---------- Hero ---------- */
+  .hero-bg{
+    background-image: linear-gradient(180deg, rgba(28,5,7,.55) 0%, rgba(28,5,7,.75) 60%, rgba(28,5,7,.95) 100%), url('images/couple-portrait.jpg');
+    background-size: cover;
+    background-position: center 20%;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn-gold{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding: .85rem 2.2rem;
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-size: .78rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:600;
+    transition: all .35s ease;
+    background: transparent;
+  }
+  .btn-gold:hover{ background: var(--gold); color:#1c0507; }
+
+  .btn-fill{
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding: .8rem 1.8rem;
+    background: linear-gradient(180deg, #ddbd6f, #a9822f);
+    color:#221b16;
+    letter-spacing:.08em;
+    text-transform: uppercase;
+    font-size:.75rem;
+    font-weight:700;
+    transition: transform .25s ease, box-shadow .25s ease;
+    box-shadow: 0 6px 18px rgba(169,130,47,.25);
+  }
+  .btn-fill:hover{ transform: translateY(-2px); box-shadow: 0 10px 22px rgba(169,130,47,.35); }
+
+  /* ---------- Countdown ---------- */
+  .cd-box{
+    background: rgba(250,244,230,.06);
+    border: 1px solid rgba(201,162,75,.5);
+    min-width: 72px;
+  }
+
+  /* ---------- Gunungan watermark ---------- */
+  .gunungan-watermark{
+    position:absolute; left:50%; top:0; transform:translateX(-50%);
+    width: 220px; opacity:.06; pointer-events:none;
+  }
+  @media (min-width: 640px){
+    .gunungan-watermark{ width: 340px; }
+  }
+
+  /* ---------- Back to top ---------- */
+  #backToTop{
+    position:fixed; right:1.1rem; bottom:1.1rem; z-index:40;
+    width:46px; height:46px; border-radius:9999px;
+    background: linear-gradient(180deg,#ddbd6f,#a9822f);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.28);
+    opacity:0; transform: translateY(12px); pointer-events:none;
+    transition: opacity .3s ease, transform .3s ease;
+  }
+  #backToTop.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+
+  /* ---------- Copy toast ---------- */
+  #toast{
+    position: fixed; left:50%; bottom:1.5rem; transform: translate(-50%, 20px);
+    background:#1c0507; color:#eeda9d; border:1px solid #c9a24b;
+    padding:.6rem 1.2rem; font-family:'Cormorant Garamond',serif; letter-spacing:.03em;
+    z-index:70; opacity:0; transition: all .35s ease; pointer-events:none;
+    font-size:.95rem;
+  }
+  #toast.show{ opacity:1; transform: translate(-50%,0); }
+
+  .fade-underline{
+    position:relative;
+  }
+  .fade-underline::after{
+    content:''; position:absolute; left:50%; transform:translateX(-50%); bottom:-10px;
+    width:64px; height:1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  input, select, textarea{ font-family: 'Cormorant Garamond', serif; }
+  input:focus, select:focus, textarea:focus{ outline: none; box-shadow: 0 0 0 2px rgba(201,162,75,.6); }
+
+  ::selection{ background: #c9a24b; color:#1c0507; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .curtain-left, .curtain-right{ animation:none !important; transition-duration:.2s !important; }
+  }
+</style>
+</head>
+
+<body class="no-scroll bg-cream-100 text-ink-900">
+
+  <!-- ============================================================= -->
+  <!-- COVER / CURTAIN                                                -->
+  <!-- ============================================================= -->
+  <div id="cover">
+    <div class="curtain-panel curtain-left"><div class="curtain-fringe"></div></div>
+    <div class="curtain-panel curtain-right"><div class="curtain-fringe"></div></div>
+
+    <div class="cover-content relative z-10 h-full w-full flex items-center justify-center px-6">
+      <div class="max-w-md w-full text-center text-cream-100">
+
+        <svg class="chandelier-glow mx-auto mb-4" width="78" height="60" viewBox="0 0 78 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M39 0V10" stroke="#eeda9d" stroke-width="1.2"/>
+          <circle cx="39" cy="14" r="4" stroke="#eeda9d" stroke-width="1.2"/>
+          <path d="M12 22C12 22 25 14 39 14C53 14 66 22 66 22" stroke="#eeda9d" stroke-width="1.2"/>
+          <path d="M39 14V30" stroke="#eeda9d" stroke-width="1"/>
+          <path d="M12 22L8 40M39 30L39 46M66 22L70 40" stroke="#eeda9d" stroke-width="1"/>
+          <circle cx="8" cy="43" r="2" fill="#eeda9d"/>
+          <circle cx="39" cy="49" r="2.4" fill="#eeda9d"/>
+          <circle cx="70" cy="43" r="2" fill="#eeda9d"/>
+          <path d="M22 20L18 34M56 20L60 34" stroke="#eeda9d" stroke-width="1"/>
+          <circle cx="18" cy="36" r="1.6" fill="#eeda9d"/>
+          <circle cx="60" cy="36" r="1.6" fill="#eeda9d"/>
+        </svg>
+
+        <p class="font-script text-3xl text-gold-300 mb-1">Undangan Pernikahan</p>
+
+        <div class="ornate-divider my-4"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+
+        <div id="coverGuestBlock">
+          <p class="uppercase tracking-[0.3em] text-xs text-gold-200/80 mb-1">Kepada Yth.</p>
+          <p class="text-sm text-cream-200 mb-1">Bapak/Ibu/Saudara/i</p>
+          <p id="guestName" class="font-display text-xl italic text-gold-300 mb-6">Tamu Undangan</p>
+        </div>
+
+        <h1 class="font-display italic text-4xl sm:text-5xl mb-2">Rendi <span class="font-script not-italic text-gold-300 text-3xl align-middle">&amp;</span> Boru</h1>
+        <p class="text-sm tracking-[0.25em] uppercase text-gold-200/70 mb-8">07 – 08 September 2026</p>
+
+        <button id="openBtn" class="btn-gold mx-auto">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4L20 12L4 20V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Buka Undangan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- HERO                                                           -->
+  <!-- ============================================================= -->
+  <section id="home" class="relative min-h-screen hero-bg flex items-end justify-center overflow-hidden">
+    <div class="relative z-10 text-center text-cream-100 px-6 pb-16 pt-28 sm:pt-40 w-full">
+      <p data-aos="fade-down" data-aos-duration="900" class="font-script text-2xl sm:text-3xl text-gold-300 mb-3">The Wedding Of</p>
+      <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="font-display italic text-5xl sm:text-7xl mb-4">Rendi &amp; Boru</h1>
+      <div data-aos="fade-up" data-aos-delay="300" class="ornate-divider my-5"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+      <p data-aos="fade-up" data-aos-delay="350" class="tracking-[0.3em] text-sm sm:text-base uppercase text-gold-200">07 — 08 September 2026</p>
+      <p data-aos="fade-up" data-aos-delay="450" class="text-base sm:text-lg mt-2 text-cream-200">Rembes, Watuagung, Kec. Tuntang, Kab. Semarang</p>
+
+      <a href="#acara" data-aos="fade-up" data-aos-delay="600" class="inline-flex flex-col items-center mt-10 text-gold-300 group">
+        <span class="text-xs tracking-[0.25em] uppercase mb-2 opacity-80">Gulir ke Bawah</span>
+        <svg class="animate-bounce" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- QUOTE                                                          -->
+  <!-- ============================================================= -->
+  <section class="relative bg-maroon-900 batik-bg text-cream-100 py-20 px-6 overflow-hidden">
+    <svg class="gunungan-watermark" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 4C104 40 130 46 150 60C176 78 190 108 190 140C190 180 160 216 100 216C40 216 10 180 10 140C10 108 24 78 50 60C70 46 96 40 100 4Z" stroke="#eeda9d" stroke-width="1.4"/>
+      <path d="M100 30C102 54 118 60 132 70C148 82 156 100 156 122" stroke="#eeda9d" stroke-width="1"/>
+    </svg>
+    <div class="relative z-10 max-w-2xl mx-auto text-center" data-aos="fade-up">
+      <div class="ornate-divider mb-6"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+      <p class="font-display italic text-xl sm:text-2xl leading-relaxed text-cream-200">
+        "Dua hati yang semula berjalan sendiri, kini bertaut dalam satu langkah &mdash;
+        merajut restu orang tua dan doa leluhur, menuju rumah tangga yang rukun,
+        bahagia, serta penuh berkah."
+      </p>
+      <p class="font-script text-2xl text-gold-300 mt-6">Rendi &amp; Boru</p>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- MEMPELAI                                                       -->
+  <!-- ============================================================= -->
+  <section id="mempelai" class="relative bg-cream-100 batik-bg-light py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center mb-14" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-600 mb-1">Assalamu'alaikum Wr. Wb. / Salam Sejahtera</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Kedua Mempelai</h2>
+      <p class="max-w-xl mx-auto mt-6 text-lg text-ink-900/80">
+        Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk berkenan
+        hadir dan memberikan doa restu atas pernikahan kami.
+      </p>
+    </div>
+
+    <div class="max-w-md mx-auto mb-16" data-aos="zoom-in">
+      <div class="ornate-frame">
+        <img src="images/couple-portrait.jpg" alt="Rendi & Boru" width="1004" height="1504" loading="lazy" class="w-full h-auto aspect-[2/3] object-cover">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto grid sm:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+      <div data-aos="fade-right" class="text-center sm:text-right">
+        <div class="w-16 h-16 mx-auto sm:mx-0 sm:ml-auto rounded-full border border-gold-500 flex items-center justify-center font-display italic text-xl text-gold-600 mb-4">R</div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-1">Mempelai Pria</p>
+        <h3 id="groomName" class="font-display text-2xl italic mb-2">Rendi Danu Prasetyo</h3>
+        <p class="text-ink-900/75 leading-relaxed">
+          Putra dari<br><span id="groomParents">Bapak &amp; Ibu Orang Tua Mempelai 1</span>
+        </p>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-delay="150" class="flex justify-center">
+        <span class="font-script text-5xl text-gold-500">&amp;</span>
+      </div>
+
+      <div data-aos="fade-left" class="text-center sm:text-left">
+        <div class="w-16 h-16 mx-auto sm:mx-0 rounded-full border border-gold-500 flex items-center justify-center font-display italic text-xl text-gold-600 mb-4">B</div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-1">Mempelai Wanita</p>
+        <h3 id="brideName" class="font-display text-2xl italic mb-2">Boru Hotnida Samosir</h3>
+        <p class="text-ink-900/75 leading-relaxed">
+          Putri dari<br><span id="brideParents">Bapak &amp; Ibu Orang Tua Mempelai 2</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="parang-divider bg-cream-100"></div>
+
+  <!-- ============================================================= -->
+  <!-- COUNTDOWN                                                      -->
+  <!-- ============================================================= -->
+  <section class="bg-maroon-950 batik-bg py-20 px-6 text-cream-100">
+    <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-300 mb-1">Save The Date</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl mb-10 fade-underline pb-3 inline-block">Menghitung Hari Bahagia</h2>
+
+      <div class="flex justify-center gap-3 sm:gap-5 flex-wrap">
+        <div class="cd-box px-4 py-4 sm:px-6 sm:py-5 text-center">
+          <div id="cd-days" class="font-display text-3xl sm:text-4xl text-gold-300">00</div>
+          <div class="text-[10px] sm:text-xs tracking-[0.2em] uppercase mt-1 text-cream-200/70">Hari</div>
+        </div>
+        <div class="cd-box px-4 py-4 sm:px-6 sm:py-5 text-center">
+          <div id="cd-hours" class="font-display text-3xl sm:text-4xl text-gold-300">00</div>
+          <div class="text-[10px] sm:text-xs tracking-[0.2em] uppercase mt-1 text-cream-200/70">Jam</div>
+        </div>
+        <div class="cd-box px-4 py-4 sm:px-6 sm:py-5 text-center">
+          <div id="cd-minutes" class="font-display text-3xl sm:text-4xl text-gold-300">00</div>
+          <div class="text-[10px] sm:text-xs tracking-[0.2em] uppercase mt-1 text-cream-200/70">Menit</div>
+        </div>
+        <div class="cd-box px-4 py-4 sm:px-6 sm:py-5 text-center">
+          <div id="cd-seconds" class="font-display text-3xl sm:text-4xl text-gold-300">00</div>
+          <div class="text-[10px] sm:text-xs tracking-[0.2em] uppercase mt-1 text-cream-200/70">Detik</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- ACARA / EVENT + MAP                                            -->
+  <!-- ============================================================= -->
+  <section id="acara" class="relative bg-cream-100 batik-bg-light py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-14" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-600 mb-1">Rangkaian Acara</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Akad &amp; Resepsi</h2>
+    </div>
+
+    <div class="max-w-4xl mx-auto grid sm:grid-cols-2 gap-6 mb-14">
+      <div data-aos="fade-up" class="bg-white border border-gold-500/40 p-8 text-center shadow-sm">
+        <svg class="mx-auto mb-4 text-gold-600" width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 8.5L21 9L16 13.5L17.5 20L12 16.5L6.5 20L8 13.5L3 9L9.5 8.5L12 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-2">Akad Nikah</p>
+        <p id="akadDay" class="font-display italic text-2xl mb-1">Senin</p>
+        <p id="akadDate" class="text-lg text-ink-900/80">7 September 2026</p>
+        <p id="akadTime" class="text-lg text-ink-900/80">08.00 WIB &ndash; Selesai</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150" class="bg-white border border-gold-500/40 p-8 text-center shadow-sm">
+        <svg class="mx-auto mb-4 text-gold-600" width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 8.5L21 9L16 13.5L17.5 20L12 16.5L6.5 20L8 13.5L3 9L9.5 8.5L12 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-2">Resepsi Pernikahan</p>
+        <p id="resepsiDay" class="font-display italic text-2xl mb-1">Selasa</p>
+        <p id="resepsiDate" class="text-lg text-ink-900/80">8 September 2026</p>
+        <p id="resepsiTime" class="text-lg text-ink-900/80">11.00 &ndash; 14.00 WIB</p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-center mb-8" data-aos="fade-up">
+      <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-2">Lokasi Acara</p>
+      <p id="eventAddress" class="text-lg sm:text-xl text-ink-900/85 max-w-xl mx-auto leading-relaxed">
+        Dusun Rembes, RT 001 / RW 004, Desa Watuagung, Kecamatan Tuntang, Kabupaten Semarang, Jawa Tengah 50773
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+      <div class="ornate-frame">
+        <iframe id="mapFrame" class="w-full h-72 sm:h-96 grayscale-[10%]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+      <div class="text-center mt-8">
+        <a id="mapLink" href="#" target="_blank" rel="noopener" class="btn-fill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22C12 22 19 15.5 19 10A7 7 0 1 0 5 10C5 15.5 12 22 12 22Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+          Buka di Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="parang-divider bg-cream-100"></div>
+
+  <!-- ============================================================= -->
+  <!-- GALLERY                                                        -->
+  <!-- ============================================================= -->
+  <section id="galeri" class="bg-maroon-950 batik-bg py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-14 text-cream-100" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-300 mb-1">Momen Bahagia</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Galeri Foto</h2>
+    </div>
+    <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+      <div data-aos="fade-up" data-aos-delay="0" class="ornate-frame">
+        <img src="images/couple-table.jpg" alt="Rendi & Boru" width="854" height="1280" loading="lazy" class="w-full h-56 sm:h-72 object-cover">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="ornate-frame">
+        <img src="images/couple-throne.jpg" alt="Rendi & Boru" width="854" height="1280" loading="lazy" class="w-full h-56 sm:h-72 object-cover">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="ornate-frame">
+        <img src="images/couple-batak.jpg" alt="Rendi & Boru" width="854" height="1280" loading="lazy" class="w-full h-56 sm:h-72 object-cover">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" class="ornate-frame">
+        <img src="images/couple-portrait.jpg" alt="Rendi & Boru" width="1004" height="1504" loading="lazy" class="w-full h-56 sm:h-72 object-cover">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- GIFT / AMPLOP DIGITAL                                          -->
+  <!-- ============================================================= -->
+  <section id="kado" class="bg-cream-100 batik-bg-light py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-14" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-600 mb-1">Tanda Kasih</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Amplop Digital</h2>
+      <p class="max-w-lg mx-auto mt-6 text-lg text-ink-900/80">
+        Doa restu Bapak/Ibu/Saudara/i adalah karunia yang paling berarti bagi kami.
+        Namun jika ingin memberikan tanda kasih, kami sediakan pilihan berikut.
+      </p>
+    </div>
+
+    <div id="bankList" class="max-w-2xl mx-auto grid sm:grid-cols-2 gap-6"></div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- WISHES / GUESTBOOK                                             -->
+  <!-- ============================================================= -->
+  <section id="ucapan" class="bg-maroon-900 batik-bg py-24 px-6 text-cream-100">
+    <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
+      <p class="font-script text-2xl text-gold-300 mb-1">Untuk Kedua Mempelai</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Ucapan &amp; Doa</h2>
+    </div>
+
+    <form id="wishForm" data-aos="fade-up" class="max-w-xl mx-auto grid gap-4 mb-14">
+      <input id="wishName" type="text" required placeholder="Nama Anda"
+        class="bg-transparent border border-gold-500/50 px-4 py-3 text-cream-100 placeholder-cream-200/50" />
+      <select id="wishAttendance" class="bg-maroon-900 border border-gold-500/50 px-4 py-3 text-cream-100">
+        <option value="Hadir">Insya Allah Hadir</option>
+        <option value="Ragu">Masih Ragu</option>
+        <option value="Tidak Hadir">Belum Bisa Hadir</option>
+      </select>
+      <textarea id="wishMessage" rows="3" required placeholder="Tulis ucapan dan doa terbaik Anda..."
+        class="bg-transparent border border-gold-500/50 px-4 py-3 text-cream-100 placeholder-cream-200/50"></textarea>
+      <button type="submit" class="btn-fill justify-center">Kirim Ucapan</button>
+      <p class="text-xs text-center text-cream-200/50">*Ucapan tersimpan di perangkat ini.</p>
+    </form>
+
+    <div id="wishList" class="max-w-xl mx-auto grid gap-4"></div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- FOOTER                                                         -->
+  <!-- ============================================================= -->
+  <footer class="relative bg-maroon-950 batik-bg text-cream-100 py-20 px-6 text-center overflow-hidden">
+    <svg class="gunungan-watermark" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 4C104 40 130 46 150 60C176 78 190 108 190 140C190 180 160 216 100 216C40 216 10 180 10 140C10 108 24 78 50 60C70 46 96 40 100 4Z" stroke="#eeda9d" stroke-width="1.4"/>
+    </svg>
+    <div class="relative z-10" data-aos="fade-up">
+      <div class="ornate-divider mb-6"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+      <p class="max-w-md mx-auto text-lg text-cream-200 mb-6">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu.
+      </p>
+      <h3 class="font-display italic text-3xl mb-2">Rendi &amp; Boru</h3>
+      <p class="text-sm tracking-[0.2em] uppercase text-gold-300/70">Wassalamu'alaikum Wr. Wb.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Kembali ke atas">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="#1c0507" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    /* =========================================================
+       CONFIG — edit data undangan di sini
+    ========================================================= */
+    const CONFIG = {
+      groom: {
+        fullName: "Rendi Danu Prasetyo",
+        parents: "Bapak &amp; Ibu Orang Tua Mempelai 1",
+      },
+      bride: {
+        fullName: "Boru Hotnida Samosir",
+        parents: "Bapak &amp; Ibu Orang Tua Mempelai 2",
+      },
+      akad: { day: "Senin", date: "7 September 2026", time: "08.00 WIB &ndash; Selesai" },
+      resepsi: { day: "Selasa", date: "8 September 2026", time: "11.00 &ndash; 14.00 WIB" },
+      address: "Dusun Rembes, RT 001 / RW 004, Desa Watuagung, Kecamatan Tuntang, Kabupaten Semarang, Jawa Tengah 50773",
+      mapQuery: "Dusun Rembes, Desa Watuagung, Kecamatan Tuntang, Kabupaten Semarang",
+      countdownTarget: "2026-09-07T08:00:00+07:00",
+      banks: [
+        { bank: "BCA", number: "5510375264", holder: "Boru Hotnida Samosir" },
+        { bank: "Mandiri", number: "1360036825484", holder: "Rendi Danu Prasetyo" },
+      ],
+      wishesStorageKey: "wedding_wishes_rendi_boru",
+    };
+
+    /* ---------- Populate config-driven content ---------- */
+    document.getElementById('groomName').innerHTML = CONFIG.groom.fullName;
+    document.getElementById('groomParents').innerHTML = CONFIG.groom.parents;
+    document.getElementById('brideName').innerHTML = CONFIG.bride.fullName;
+    document.getElementById('brideParents').innerHTML = CONFIG.bride.parents;
+
+    document.getElementById('akadDay').textContent = CONFIG.akad.day;
+    document.getElementById('akadDate').textContent = CONFIG.akad.date;
+    document.getElementById('akadTime').innerHTML = CONFIG.akad.time;
+    document.getElementById('resepsiDay').textContent = CONFIG.resepsi.day;
+    document.getElementById('resepsiDate').textContent = CONFIG.resepsi.date;
+    document.getElementById('resepsiTime').innerHTML = CONFIG.resepsi.time;
+
+    document.getElementById('eventAddress').textContent = CONFIG.address;
+
+    const mapQ = encodeURIComponent(CONFIG.mapQuery);
+    document.getElementById('mapFrame').src = `https://maps.google.com/maps?q=${mapQ}&output=embed`;
+    document.getElementById('mapLink').href = `https://www.google.com/maps/search/?api=1&query=${mapQ}`;
+
+    /* ---------- Bank cards ---------- */
+    const bankIcon = `<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 10L12 4L21 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V19M19 10V19M9 10V19M15 10V19" stroke="currentColor" stroke-width="1.4"/><path d="M3 19H21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
+    const bankListEl = document.getElementById('bankList');
+    CONFIG.banks.forEach((b, i) => {
+      const card = document.createElement('div');
+      card.className = 'bg-white border border-gold-500/40 p-7 text-center shadow-sm';
+      card.setAttribute('data-aos', 'fade-up');
+      card.setAttribute('data-aos-delay', String(i * 150));
+      card.innerHTML = `
+        <div class="text-gold-600 flex justify-center mb-3">${bankIcon}</div>
+        <p class="text-xs tracking-[0.25em] uppercase text-gold-600 mb-2">${b.bank}</p>
+        <p class="font-display text-xl tracking-wider mb-1">${b.number}</p>
+        <p class="text-ink-900/70 mb-4">a.n. ${b.holder}</p>
+        <button class="copy-btn btn-gold !text-gold-700 !border-gold-600 text-xs" data-value="${b.number}">
+          Salin Nomor
+        </button>`;
+      bankListEl.appendChild(card);
+    });
+    bankListEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('.copy-btn');
+      if (!btn) return;
+      const val = btn.getAttribute('data-value');
+      copyToClipboard(val, 'Nomor rekening disalin!');
+    });
+
+    function copyToClipboard(text, message) {
+      const done = () => showToast(message);
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+      } else {
+        fallbackCopy(text, done);
+      }
+    }
+    function fallbackCopy(text, cb) {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+      cb();
+    }
+    let toastTimer;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    /* ---------- Guest name from URL ---------- */
+    function getGuestNameFromUrl() {
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      if (segments.length === 0) return null;
+      let raw = segments[segments.length - 1];
+      try { raw = decodeURIComponent(raw); } catch (e) {}
+      raw = raw.replace(/-/g, ' ').replace(/\+/g, ' ').trim();
+      if (!raw) return null;
+      // Title case
+      return raw.replace(/\w\S*/g, (t) => t.charAt(0).toUpperCase() + t.substr(1).toLowerCase());
+    }
+    const guest = getGuestNameFromUrl();
+    if (guest) {
+      document.getElementById('guestName').textContent = guest;
+      document.title = `Undangan Pernikahan Rendi & Boru — ${guest}`;
+    } else {
+      document.getElementById('coverGuestBlock').style.display = 'none';
+    }
+
+    /* ---------- Curtain open ---------- */
+    const cover = document.getElementById('cover');
+    function unlockScroll() {
+      document.documentElement.classList.remove('no-scroll');
+      document.body.classList.remove('no-scroll');
+    }
+    document.getElementById('openBtn').addEventListener('click', () => {
+      cover.classList.add('is-open');
+      unlockScroll();
+      safeAOS((AOS) => AOS.refresh());
+      setTimeout(() => {
+        cover.classList.add('is-hidden');
+        safeAOS((AOS) => (AOS.refreshHard ? AOS.refreshHard() : AOS.refresh()));
+      }, 1500);
+    });
+    // Prevent stray touch-scroll on the curtain itself while locked (iOS Safari)
+    cover.addEventListener('touchmove', (e) => {
+      if (!cover.classList.contains('is-open')) e.preventDefault();
+    }, { passive: false });
+
+    /* ---------- Countdown ---------- */
+    const target = new Date(CONFIG.countdownTarget).getTime();
+    function tickCountdown() {
+      const now = Date.now();
+      let diff = target - now;
+      if (diff < 0) diff = 0;
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = String(s).padStart(2, '0');
+    }
+    tickCountdown();
+    setInterval(tickCountdown, 1000);
+
+    /* ---------- Wishes / guestbook (localStorage) ---------- */
+    function loadWishes() {
+      try { return JSON.parse(localStorage.getItem(CONFIG.wishesStorageKey)) || []; }
+      catch (e) { return []; }
+    }
+    function saveWishes(list) {
+      localStorage.setItem(CONFIG.wishesStorageKey, JSON.stringify(list));
+    }
+    function renderWishes() {
+      const list = loadWishes().slice().reverse();
+      const el = document.getElementById('wishList');
+      el.innerHTML = '';
+      if (list.length === 0) {
+        el.innerHTML = '<p class="text-center text-cream-200/50">Jadilah yang pertama mengirim ucapan &amp; doa.</p>';
+        return;
+      }
+      list.forEach((w) => {
+        const item = document.createElement('div');
+        item.className = 'border border-gold-500/30 px-5 py-4';
+        const badge = w.attendance === 'Hadir' ? 'text-gold-300' : w.attendance === 'Ragu' ? 'text-cream-200/70' : 'text-cream-200/50';
+        item.innerHTML = `
+          <div class="flex items-center justify-between mb-1">
+            <p class="font-display italic text-lg">${escapeHtml(w.name)}</p>
+            <span class="text-[10px] tracking-[0.15em] uppercase ${badge}">${escapeHtml(w.attendance)}</span>
+          </div>
+          <p class="text-cream-200/85 leading-relaxed">${escapeHtml(w.message)}</p>`;
+        el.appendChild(item);
+      });
+    }
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+    document.getElementById('wishForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('wishName').value.trim();
+      const attendance = document.getElementById('wishAttendance').value;
+      const message = document.getElementById('wishMessage').value.trim();
+      if (!name || !message) return;
+      const list = loadWishes();
+      list.push({ name, attendance, message, ts: Date.now() });
+      saveWishes(list);
+      renderWishes();
+      e.target.reset();
+      showToast('Terima kasih atas ucapan & doanya!');
+    });
+    renderWishes();
+
+    /* ---------- Back to top ---------- */
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) backBtn.classList.add('show');
+      else backBtn.classList.remove('show');
+    });
+    backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* =========================================================
+       AOS — dimuat paling akhir & selalu aman (fail-safe).
+       Semua fitur inti di atas (countdown, ucapan, back-to-top,
+       tirai pembuka) TIDAK bergantung pada AOS supaya undangan
+       tetap berfungsi penuh walau AOS gagal/lambat dimuat
+       (misalnya koneksi seluler yang lambat).
+    ========================================================= */
+    function safeAOS(fn) {
+      try {
+        if (typeof AOS !== 'undefined') fn(AOS);
+      } catch (e) { /* diamkan, jangan sampai menghentikan skrip lain */ }
+    }
+    function revealAllNow() {
+      document.querySelectorAll('[data-aos]').forEach((el) => {
+        el.classList.add('aos-animate');
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+    }
+
+    window.addEventListener('load', () => {
+      safeAOS((AOS) => AOS.init({ duration: 900, once: true, offset: 80 }));
+      // Kalau AOS ternyata gagal dimuat sama sekali, paksa tampil.
+      if (typeof AOS === 'undefined') revealAllNow();
+    });
+
+    // Jaring pengaman terakhir: apa pun yang terjadi, jangan sampai
+    // ada konten yang tersembunyi permanen di HP.
+    setTimeout(revealAllNow, 4000);
+
+    // Toolbar/URL bar HP yang muncul-hilang mengubah tinggi viewport;
+    // refresh perhitungan posisi AOS supaya animasi tidak "nyangkut".
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => safeAOS((AOS) => AOS.refresh()), 250);
+    });
+    window.addEventListener('orientationchange', () => {
+      setTimeout(() => safeAOS((AOS) => AOS.refresh()), 300);
+    });
+  </script>
+</body>
+</html>
