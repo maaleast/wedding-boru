@@ -219,6 +219,23 @@
     .gunungan-watermark{ width: 340px; }
   }
 
+  /* ---------- Music toggle (vinyl) ---------- */
+  #musicToggle{
+    position:fixed; left:1.1rem; bottom:1.1rem; z-index:40;
+    width:52px; height:52px; border-radius:9999px;
+    background: #1c0507;
+    border: 2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    transition: transform .2s ease, border-color .3s ease, opacity .3s ease;
+    cursor:pointer;
+  }
+  #musicToggle:hover{ transform: scale(1.08); }
+  #musicToggle.paused{ border-color: rgba(201,162,75,.35); opacity:.75; }
+  .vinyl-disc{ display:inline-flex; animation: vinylSpin 3.2s linear infinite; }
+  .vinyl-disc.paused{ animation-play-state: paused; opacity:.6; }
+  @keyframes vinylSpin{ from{ transform:rotate(0deg); } to{ transform:rotate(360deg); } }
+
   /* ---------- Back to top ---------- */
   #backToTop{
     position:fixed; right:1.1rem; bottom:1.1rem; z-index:40;
@@ -263,6 +280,10 @@
 
 <body class="no-scroll bg-cream-100 text-ink-900">
 
+  <!-- Musik latar lokal -->
+  <audio id="bgMusic" src="music/lagu.mp3" loop preload="auto"></audio>
+
+
   <!-- ============================================================= -->
   <!-- COVER / CURTAIN                                                -->
   <!-- ============================================================= -->
@@ -287,7 +308,7 @@
           <circle cx="60" cy="36" r="1.6" fill="#eeda9d"/>
         </svg>
 
-        <p class="font-script text-3xl text-gold-300 mb-1">Undangan Pernikahan</p>
+        <p class="font-display italic text-3xl text-gold-300 mb-1">Undangan Pernikahan</p>
 
         <div class="ornate-divider my-4"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
 
@@ -313,7 +334,7 @@
   <!-- ============================================================= -->
   <section id="home" class="relative min-h-screen hero-bg flex items-end justify-center overflow-hidden">
     <div class="relative z-10 text-center text-cream-100 px-6 pb-16 pt-28 sm:pt-40 w-full">
-      <p data-aos="fade-down" data-aos-duration="900" class="font-script text-2xl sm:text-3xl text-gold-300 mb-3">The Wedding Of</p>
+      <p data-aos="fade-down" data-aos-duration="900" class="font-display italic text-2xl sm:text-3xl text-gold-300 mb-3">The Wedding Of</p>
       <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="font-display italic text-5xl sm:text-7xl mb-4">Rendi &amp; Boru</h1>
       <div data-aos="fade-up" data-aos-delay="300" class="ornate-divider my-5"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
       <p data-aos="fade-up" data-aos-delay="350" class="tracking-[0.3em] text-sm sm:text-base uppercase text-gold-200">07 — 08 September 2026</p>
@@ -341,7 +362,7 @@
         merajut restu orang tua dan doa leluhur, menuju rumah tangga yang rukun,
         bahagia, serta penuh berkah."
       </p>
-      <p class="font-script text-2xl text-gold-300 mt-6">Rendi &amp; Boru</p>
+      <p class="font-display italic text-2xl text-gold-300 mt-6">Rendi &amp; Boru</p>
     </div>
   </section>
 
@@ -350,7 +371,7 @@
   <!-- ============================================================= -->
   <section id="mempelai" class="relative bg-cream-100 batik-bg-light py-24 px-6">
     <div class="max-w-4xl mx-auto text-center mb-14" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-600 mb-1">Salam Sejahtera</p>
+      <p class="font-display italic text-2xl text-gold-600 mb-1">Salam Sejahtera</p>
       <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Kedua Mempelai</h2>
       <p class="max-w-xl mx-auto mt-6 text-lg text-ink-900/80">
         Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk berkenan
@@ -397,7 +418,7 @@
   <!-- ============================================================= -->
   <section class="bg-maroon-950 batik-bg py-20 px-6 text-cream-100">
     <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-300 mb-1">Save The Date</p>
+      <p class="font-display italic text-2xl text-gold-300 mb-1">Save The Date</p>
       <h2 class="font-display italic text-3xl sm:text-4xl mb-10 fade-underline pb-3 inline-block">Menghitung Hari Bahagia</h2>
 
       <div class="flex justify-center gap-3 sm:gap-5 flex-wrap">
@@ -426,7 +447,7 @@
   <!-- ============================================================= -->
   <section id="acara" class="relative bg-cream-100 batik-bg-light py-24 px-6">
     <div class="max-w-3xl mx-auto text-center mb-14" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-600 mb-1">Rangkaian Acara</p>
+      <p class="font-display italic text-2xl text-gold-600 mb-1">Rangkaian Acara</p>
       <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Akad &amp; Resepsi</h2>
     </div>
 
@@ -475,7 +496,7 @@
   <!-- ============================================================= -->
   <section id="galeri" class="bg-maroon-950 batik-bg py-24 px-6">
     <div class="max-w-3xl mx-auto text-center mb-14 text-cream-100" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-300 mb-1">Momen Bahagia</p>
+      <p class="font-display italic text-2xl text-gold-300 mb-1">Momen Bahagia</p>
       <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Galeri Foto</h2>
     </div>
     <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
@@ -503,8 +524,8 @@
   <!-- ============================================================= -->
   <section id="kado" class="bg-cream-100 batik-bg-light py-24 px-6">
     <div class="max-w-3xl mx-auto text-center mb-14" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-600 mb-1">Tanda Kasih</p>
-      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Amplop Digital</h2>
+      <p class="font-display italic text-2xl text-gold-600 mb-1">Tanda Kasih</p>
+      <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Berbagi Kasih</h2>
       <p class="max-w-lg mx-auto mt-6 text-lg text-ink-900/80">
         Doa restu Bapak/Ibu/Saudara/i adalah karunia yang paling berarti bagi kami.
         Namun jika ingin memberikan tanda kasih, kami sediakan pilihan berikut.
@@ -519,7 +540,7 @@
   <!-- ============================================================= -->
   <section id="ucapan" class="bg-maroon-900 batik-bg py-24 px-6 text-cream-100">
     <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
-      <p class="font-script text-2xl text-gold-300 mb-1">Untuk Kedua Mempelai</p>
+      <p class="font-display italic text-2xl text-gold-300 mb-1">Untuk Kedua Mempelai</p>
       <h2 class="font-display italic text-3xl sm:text-4xl fade-underline pb-3">Ucapan &amp; Doa</h2>
     </div>
 
@@ -558,6 +579,17 @@
     </div>
   </footer>
 
+  <button id="musicToggle" aria-label="Putar/matikan musik latar" class="paused">
+    <span id="vinylDisc" class="vinyl-disc paused">
+      <svg width="26" height="26" viewBox="0 0 30 30">
+        <circle cx="15" cy="15" r="14" fill="#1c0507" stroke="#c9a24b" stroke-width="1.2"/>
+        <circle cx="15" cy="15" r="10.5" fill="none" stroke="#c9a24b" stroke-width="0.6" opacity="0.55"/>
+        <circle cx="15" cy="15" r="7" fill="none" stroke="#c9a24b" stroke-width="0.6" opacity="0.55"/>
+        <circle cx="15" cy="15" r="3" fill="#c9a24b"/>
+      </svg>
+    </span>
+  </button>
+
   <button id="backToTop" aria-label="Kembali ke atas">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="#1c0507" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
@@ -576,7 +608,7 @@
       },
       bride: {
         fullName: "Boru Hotnida Samosir",
-        parents: "Bapak Dapot Samosir &amp; Ibu Rosnika",
+        parents: "Bapak Dapot Samosir &amp; Ibu Rosnika Sihotang",
       },
       akad: { day: "Senin", date: "7 September 2026", time: "08.00 WIB &ndash; Selesai" },
       resepsi: { day: "Selasa", date: "8 September 2026", time: "11.00 &ndash; 14.00 WIB" },
@@ -687,6 +719,7 @@
     document.getElementById('openBtn').addEventListener('click', () => {
       cover.classList.add('is-open');
       unlockScroll();
+      startMusic();
       safeAOS((AOS) => AOS.refresh());
       setTimeout(() => {
         cover.classList.add('is-hidden');
@@ -772,6 +805,48 @@
       else backBtn.classList.remove('show');
     });
     backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* =========================================================
+       Musik latar (file lokal di folder music/lagu.mp3).
+       Pemutaran dipicu dari klik "Buka Undangan" (user gesture)
+       supaya tidak diblokir kebijakan autoplay browser.
+    ========================================================= */
+    const bgMusic = document.getElementById('bgMusic');
+    let isMusicMuted = true;
+    const musicToggle = document.getElementById('musicToggle');
+    const vinylDisc = document.getElementById('vinylDisc');
+
+    function startMusic() {
+      if (!bgMusic) return;
+      bgMusic.volume = 0.6;
+      const playPromise = bgMusic.play();
+      if (playPromise && playPromise.catch) {
+        playPromise
+          .then(() => {
+            isMusicMuted = false;
+            vinylDisc.classList.remove('paused');
+            musicToggle.classList.remove('paused');
+          })
+          .catch(() => { /* browser tetap menahan autoplay, biarkan pengguna klik tombol vinyl */ });
+      }
+    }
+
+    musicToggle.addEventListener('click', () => {
+      if (!bgMusic) return;
+      try {
+        if (bgMusic.paused) {
+          bgMusic.play();
+          isMusicMuted = false;
+          vinylDisc.classList.remove('paused');
+          musicToggle.classList.remove('paused');
+        } else {
+          bgMusic.pause();
+          isMusicMuted = true;
+          vinylDisc.classList.add('paused');
+          musicToggle.classList.add('paused');
+        }
+      } catch (e) { /* diamkan; musik bersifat opsional */ }
+    });
 
     /* =========================================================
        AOS — dimuat paling akhir & selalu aman (fail-safe).
