@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/((?!images/).*)", "destination": "/tempek" }
+    { "source": "/((?!images/).*)", "destination": "/index.html" }
   ]
 }
